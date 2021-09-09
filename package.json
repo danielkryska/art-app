@@ -12,9 +12,15 @@
     "build": "npx react-scripts build",
     "test": "npx jest --verbose ./test",
     "eject": "npx react-scripts eject",
-    "lint": "npx eslint ./ --ignore-path .gitignore",
+    "lint": "npx eslint ./src",
     "lint:fix": "npm run lint -- --fix",
-    "format": "npx prettier --write \"{,!(node_modules)/**/}*.js\""
+    "format": "npx prettier --write \"{,!(node_modules)/**/}*.js\"",
+    "test:related": "jest --bail --findRelatedTests"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "antd": "^4.16.13",
@@ -30,7 +36,9 @@
     "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-testing-library": "^4.12.2",
+    "husky": "^7.0.2",
     "jest": "^27.1.1",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.3.2"
   },
   "browserslist": {
