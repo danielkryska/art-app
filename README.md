@@ -1,5 +1,7 @@
 # Art app
 
+[![CodeFactor](https://www.codefactor.io/repository/github/danielkryska/art-app/badge)](https://www.codefactor.io/repository/github/danielkryska/art-app)
+
 ## About project
 The Art application should help the artists exercise drawing/painting. With good labeling of images and features like: minimal gamification, time limited drawing it can be done out of hand.
 

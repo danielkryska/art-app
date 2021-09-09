@@ -6,7 +6,11 @@ module.exports = {
   },
   parserOptions: { ecmaVersion: 8, sourceType: 'module' },
   ignorePatterns: ['node_modules/*'],
-  extends: ['eslint:recommended'],
+  extends: [
+    'eslint:recommended',
+    "react-app",
+    "react-app/jest"
+  ],
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
